@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HNJP Steuerberater - Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .salon-section {
+        padding: 50px 0;
+      }
+
+      .salon-title {
+        color: #003366;
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+
+      .salon-description {
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto 50px;
+        color: #333;
+      }
+
+      .salon-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        margin-bottom: 30px;
+      }
+
+      .salon-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+
+      .salon-services {
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 30px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .salon-services h3 {
+        color: #003366;
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+      }
+
+      .salon-services ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .salon-services li {
+        margin-bottom: 10px;
+        padding-left: 20px;
+        position: relative;
+      }
+
+      .salon-services li::before {
+        content: "•";
+        color: #003366;
+        position: absolute;
+        left: 0;
+      }
+
+      .calligraphy-cut-section {
+        padding: 50px 0;
+        background-color: var(--section-color);
+      }
+
+      .calligraphy-cut-title {
+        color: #003366;
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+
+      .calligraphy-cut-description {
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto 30px;
+        color: #333;
+      }
+
+      .calligraphy-cut-benefits {
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 30px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .calligraphy-cut-benefits h3 {
+        color: #003366;
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+      }
+
+      .calligraphy-cut-benefits ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .calligraphy-cut-benefits li {
+        margin-bottom: 10px;
+        padding-left: 20px;
+        position: relative;
+      }
+
+      .calligraphy-cut-benefits li::before {
+        content: "•";
+        color: #003366;
+        position: absolute;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="top-bar">
+        <span>Contact: 02431 / 89720</span>
+      </div>
+      <div class="container">
+        <div class="header-main">
+          <div class="logo">
+            <a href="/hnjp/"
+              ><img src="./imgs/Logo-HNJP.png" alt="HNJP Logo"
+            /></a>
+          </div>
+          <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <nav>
+            <ul class="navbar">
+              <li><a href="unternehmen.html">Unternehmen</a></li>
+              <li><a href="team.html">Team</a></li>
+              <li><a href="jobs.html">Jobs</a></li>
+              <li><a href="kontakt.html">Kontakt</a></li>
+              <li><a href="preis.html">Preise</a></li>
+              <li><a href="termin.html">Termin</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero__kanzlei">
+      <div class="full-container">
+        <img
+          src="https://www.hnjp.de/wp-content/uploads/2015/11/hnjp_header_kanzlei_hell..jpg"
+          alt="Team Image"
+        />
+        <h1 class="hero__kanzlei__title">
+          Unser Team aus Steuerexperten berät ganzheitlich und
+          mandantenorientiert.
+        </h1>
+      </div>
+    </section>
+
+    <!-- Salon Section -->
+    <section id="salon" class="salon-section">
+      <div class="container">
+        <h2 class="salon-title">Unser Büro</h2>
+        <p class="salon-description">
+          Willkommen in unserem modernen und einladenden Büro. Unser engagiertes
+          Team von Steuerexperten bietet Ihnen maßgeschneiderte Lösungen für
+          alle Ihre steuerlichen Anliegen.
+        </p>
+        <div class="salon-gallery">
+          <img
+            src="https://www.hnjp.de/wp-content/uploads/2015/11/hnjp_header_kanzlei_hell..jpg"
+            alt="Büroeinrichtung"
+            class="salon-image"
+          />
+          <img
+            src="https://www.hnjp.de/wp-content/uploads/2015/11/hnjp_content_teaser_unternehmen.jpg"
+            alt="Teamarbeit"
+            class="salon-image"
+          />
+          <img
+            src="https://www.hnjp.de/wp-content/uploads/2015/11/hnjp_content_teaser_unternehmen.jpg"
+            alt="Beratung"
+            class="salon-image"
+          />
+          <img
+            src="https://www.hnjp.de/wp-content/uploads/2015/11/hnjp_content_teaser_unternehmen.jpg"
+            alt="Besprechungsraum"
+            class="salon-image"
+          />
+        </div>
+        <div class="salon-services">
+          <h3>Unsere Dienstleistungen</h3>
+          <ul>
+            <li>Steuerberatung für Unternehmen und Privatpersonen</li>
+            <li>Jahresabschlüsse und Steuererklärungen</li>
+            <li>Unternehmensgründung und -beratung</li>
+            <li>Finanzbuchhaltung und Lohnabrechnung</li>
+            <li>Erbschaft- und Schenkungsteuerberatung</li>
+            <li>Individuelle Beratung und Planung</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Calligraphy Cut Section -->
+    <section id="calligraphy-cut" class="calligraphy-cut-section">
+      <div class="container">
+        <h2 class="calligraphy-cut-title">Calligraphy Cut</h2>
+        <p class="calligraphy-cut-description">
+          Unsere Steuerberatung bietet Ihnen maßgeschneiderte Lösungen für alle
+          steuerlichen Herausforderungen. Vertrauen Sie auf unsere Expertise, um
+          Ihre steuerlichen Ziele zu erreichen!
+        </p>
+        <div class="calligraphy-cut-benefits">
+          <h3>Vorteile unserer Steuerberatung</h3>
+          <ul>
+            <li>Individuelle Beratung, abgestimmt auf Ihre Bedürfnisse</li>
+            <li>Optimierung Ihrer Steuerlast durch gezielte Strategien</li>
+            <li>Aktuelle Informationen zu steuerlichen Änderungen</li>
+            <li>Umfassende Unterstützung bei der Jahresabschlusserstellung</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="container">
+        <div class="top-footer">
+          <ul>
+            <li class="text">
+              <p class="top-footer__title">
+                HNJP Steuerberater - Partnerschaft mbB
+              </p>
+              <p class="top-footer__paragraph">
+                Die Steuerkanzlei HNJP Steuerberater – Partnerschaft mbB mit
+                Sitz in Krefeld unterstützt Unternehmen, Freiberufler und <br />
+                Privatpersonen in allen Steuerbelangen. Von der Existenzgründung
+                bis zur Nachfolgeregelung – unser Team aus <br />
+                Steuerexperten berät ganzheitlich und mandantenorientiert. Dabei
+                legen wir besonderen Wert auf eine vertrauensvolle, <br />
+                individuelle und nachhaltige Beratung unserer Mandanten. Wir
+                streben eine langfristige Zusammenarbeit an, um gemeinsam <br />
+                definierte Ziele zu verfolgen und zukunftsorientiert zu
+                unterstützen.
+              </p>
+            </li>
+            <li class="kontakt">
+              <p class="top-footer__title">Kontakt</p>
+              <span class="kontakt__title"
+                >HNJP <br />
+                Steuerberater – Partnerschaft mbB</span
+              >
+              <span
+                >Uerdinger Straße 362 <br />
+                47800 Krefeld</span
+              >
+              <span class="telefon">02151 – 8073-0</span>
+              <span class="email">info@hnjp.de</span>
+            </li>
+          </ul>
+        </div>
+        <div class="bottom-footer">
+          <span>© 2020 HNJP Steuerberater - Partnerschaft mbB</span>
+          <div class="links">
+            <a href="#">Impressum</a> | <a href="#">Datenschutz</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Hamburger Menu Functionality
+      document
+        .querySelector(".hamburger")
+        .addEventListener("click", function () {
+          const navMenu = document.querySelector(".navbar");
+          navMenu.classList.toggle("active"); // Toggle the active class to slide in/out
+        });
+    </script>
+  </body>
+</html>
