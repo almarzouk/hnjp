@@ -1,6 +1,6 @@
 /* Define color variables */
 :root {
-  --primary-color: #01426a;
+  --primary-color: #043264;
   --secondary-color: rgb(2, 90, 179);
   --text-color: #333;
   --white-color: #ffffff;
@@ -53,6 +53,12 @@
   min-width: 300px;
 }
 
+.services .paragraph__small {
+  font-size: 15px !important;
+}
+.services a {
+  text-wrap: nowrap;
+}
 /* General Styles */
 /* ======================================== */
 /* ============  RESET ============ */
@@ -349,7 +355,7 @@ nav ul li a {
 
 .services .service-item .service-item__text {
   position: absolute;
-  top: 50%;
+  top: 58%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: var(--white-color);
@@ -1146,6 +1152,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 50px;
 }
 .spiezial__cards .cards .card {
   height: 100%;

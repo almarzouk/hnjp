@@ -21,7 +21,7 @@
           <ul class="short__links">
             <li><a href="neuigkeiten.html">Neuigkeiten</a></li>
             <li><a href="kontakt.html">Kontakt</a></li>
-            <li><a href="karriere.html">Karriere</a></li>
+            <li><a href="jobs.html">Karriere</a></li>
           </ul>
         </div>
       </div>
@@ -40,10 +40,9 @@
           <nav>
             <ul class="navbar">
               <li><a href="unternehmen.html">Unternehmen</a></li>
-              <li><a href="team.html">Team</a></li>
-              <li><a href="jobs.html">Jobs</a></li>
+              <li><a href="team.html">KANZLEI</a></li>
               <li><a href="preis.html">Preise</a></li>
-              <li><a href="termin.html">Kanzlei</a></li>
+              <li><a href="termin.html">Online Termin</a></li>
               <li><a href="freie-berufe.html">Freie Berufe</a></li>
               <li><a href="privatpersonen.html">Privatpersonen</a></li>
             </ul>
@@ -67,7 +66,7 @@
                   Willkommen!
                 </h1>
                 <button class="btn__outer">
-                  Lernen Sie die Kanzlei kennen
+                  <a href="/team.html">Lernen Sie die KANZLEI kennen</a>
                 </button>
               </div>
             </div>
@@ -85,7 +84,7 @@
                   Online,<br /><span>für sicheren <br />Datenaustausch</span>
                 </h1>
                 <button class="btn__outer">
-                  Lernen Sie die Kanzlei kennen
+                  Lernen Sie die KANZLEI kennen
                 </button>
               </div>
             </div>
@@ -106,7 +105,9 @@
           8 Steuerberater, rd. 25 Teammitglieder, Erfahrung und Expertise <br />
           aus über 50 Jahren
         </p>
-        <button class="btn">Lernen Sie die Kanzlei kennen</button>
+        <button class="btn">
+          <a href="/team.html">Lernen Sie die KANZLEI kennen</a>
+        </button>
       </div>
     </section>
 
@@ -126,7 +127,9 @@
                   Seit über 50 Jahren beraten wir Unternehmen aller Branchen in
                   Steuerfragen.
                 </p>
-                <button class="btn__outer">MEHR INFOS</button>
+                <button class="btn__outer">
+                  <a href="/unternehmen.html">MEHR INFOS</a>
+                </button>
               </div>
             </div>
           </div>
@@ -136,13 +139,15 @@
               alt="Unternehmen"
             />
             <div class="service-item__text">
-              <h1 class="subheading">Unternehmen</h1>
+              <h1 class="subheading">Freie Berufe</h1>
               <div class="service__overlay">
                 <p class="paragraph__small">
                   Seit über 50 Jahren beraten wir Unternehmen aller Branchen in
                   Steuerfragen.
                 </p>
-                <button class="btn__outer">MEHR INFOS</button>
+                <button class="btn__outer">
+                  <a href="/freie-berufe.html">MEHR INFOS</a>
+                </button>
               </div>
             </div>
           </div>
@@ -152,13 +157,15 @@
               alt="Unternehmen"
             />
             <div class="service-item__text">
-              <h1 class="subheading">Unternehmen</h1>
+              <h1 class="subheading">Privatpersonen</h1>
               <div class="service__overlay">
                 <p class="paragraph__small">
                   Seit über 50 Jahren beraten wir Unternehmen aller Branchen in
                   Steuerfragen.
                 </p>
-                <button class="btn__outer">MEHR INFOS</button>
+                <button class="btn__outer">
+                  <a href="/privatpersonen.html">MEHR INFOS</a>
+                </button>
               </div>
             </div>
           </div>
@@ -227,7 +234,7 @@
           <time datetime="01.07.2024">01.07.2024</time>
           <p class="neuigkeiten__paragraph">
             Wir freuen uns, bekannt zu geben, dass Frau Anna Müller ab dem 1.
-            Juli 2024 als Partnerin in unsere Kanzlei eintreten wird. Frau
+            Juli 2024 als Partnerin in unsere KANZLEI eintreten wird. Frau
             Müller bringt über 15 Jahre Erfahrung im Bereich Steuerberatung und
             Wirtschaftsprüfung mit.
           </p>
@@ -274,7 +281,7 @@
                 HNJP Steuerberater - Partnerschaft mbB
               </p>
               <p class="top-footer__paragraph">
-                Die Steuerkanzlei HNJP Steuerberater – Partnerschaft mbB mit
+                Die Steuer KANZLEI HNJP Steuerberater – Partnerschaft mbB mit
                 Sitz in Krefeld unterstützt Unternehmen, Freiberufler und <br />
                 Privatpersonen in allen Steuerbelangen. Von der Existenzgründung
                 bis zur Nachfolgeregelung – unser Team aus <br />
@@ -395,7 +402,6 @@
 
       // Loop through each link and add 'active' class if href matches current path
       navLinks.forEach((link) => {
-        link.parentElement.classList.remove("active");
         if (link.getAttribute("href") === currentPage.split("/").pop()) {
           link.parentElement.classList.add("active");
         }

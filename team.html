@@ -16,7 +16,14 @@
     <!-- Header Section -->
     <header>
       <div class="top-bar">
-        <span>Contact: 02431 / 89720</span>
+        <div class="container">
+          <span>Kontakt: 02431 / 89720</span>
+          <ul class="short__links">
+            <li><a href="neuigkeiten.html">Neuigkeiten</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="jobs.html">Karriere</a></li>
+          </ul>
+        </div>
       </div>
       <div class="container">
         <div class="header-main">
@@ -33,20 +40,17 @@
           <nav>
             <ul class="navbar">
               <li><a href="unternehmen.html">Unternehmen</a></li>
-              <li><a href="team.html">Team</a></li>
-              <li><a href="jobs.html">Jobs</a></li>
-              <li><a href="kontakt.html">Kontakt</a></li>
+              <li><a href="team.html">Kanzlei</a></li>
               <li><a href="preis.html">Preise</a></li>
-              <li><a href="termin.html">Termin</a></li>
-              <li><a href="freie-berufe.html">Freie-berufe</a></li>
-              <li><a href="neuigkeiten.html">Neuigkeiten</a></li>
+              <li><a href="termin.html">Online Termin</a></li>
+              <li><a href="freie-berufe.html">Freie Berufe</a></li>
               <li><a href="privatpersonen.html">Privatpersonen</a></li>
             </ul>
           </nav>
         </div>
       </div>
     </header>
-
+    ]
     <!-- Hero Section -->
     <section class="hero__kanzlei">
       <div class="full-container">
@@ -407,7 +411,9 @@
                   Seit über 50 Jahren beraten wir Unternehmen aller Branchen in
                   Steuerfragen.
                 </p>
-                <button class="btn__outer">MEHR INFOS</button>
+                <button class="btn__outer">
+                  <a href="/unternehmen.html">MEHR INFOS</a>
+                </button>
               </div>
             </div>
           </div>
@@ -417,13 +423,15 @@
               alt="Unternehmen"
             />
             <div class="service-item__text">
-              <h1 class="subheading">Unternehmen</h1>
+              <h1 class="subheading">Freie Berufe</h1>
               <div class="service__overlay">
                 <p class="paragraph__small">
                   Seit über 50 Jahren beraten wir Unternehmen aller Branchen in
                   Steuerfragen.
                 </p>
-                <button class="btn__outer">MEHR INFOS</button>
+                <button class="btn__outer">
+                  <a href="/freie-berufe.html">MEHR INFOS</a>
+                </button>
               </div>
             </div>
           </div>
@@ -433,13 +441,15 @@
               alt="Unternehmen"
             />
             <div class="service-item__text">
-              <h1 class="subheading">Unternehmen</h1>
+              <h1 class="subheading">Privatpersonen</h1>
               <div class="service__overlay">
                 <p class="paragraph__small">
                   Seit über 50 Jahren beraten wir Unternehmen aller Branchen in
                   Steuerfragen.
                 </p>
-                <button class="btn__outer">MEHR INFOS</button>
+                <button class="btn__outer">
+                  <a href="/privatpersonen.html">MEHR INFOS</a>
+                </button>
               </div>
             </div>
           </div>
@@ -500,6 +510,19 @@
           const navMenu = document.querySelector(".navbar");
           navMenu.classList.toggle("active"); // Toggle the active class to slide in/out
         });
+      // Active class for the current page
+      // Get current page URL path
+      const currentPage = window.location.pathname;
+
+      // Get all navigation links
+      const navLinks = document.querySelectorAll("nav ul li a");
+
+      // Loop through each link and add 'active' class if href matches current path
+      navLinks.forEach((link) => {
+        if (link.getAttribute("href") === currentPage.split("/").pop()) {
+          link.parentElement.classList.add("active");
+        }
+      });
     </script>
   </body>
 </html>

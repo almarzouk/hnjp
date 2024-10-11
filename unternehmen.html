@@ -16,7 +16,14 @@
     <!-- Header Section -->
     <header>
       <div class="top-bar">
-        <span>Kontakt: 02431 / 89720</span>
+        <div class="container">
+          <span>Kontakt: 02431 / 89720</span>
+          <ul class="short__links">
+            <li><a href="neuigkeiten.html">Neuigkeiten</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="jobs.html">Karriere</a></li>
+          </ul>
+        </div>
       </div>
       <div class="container">
         <div class="header-main">
@@ -33,20 +40,16 @@
           <nav>
             <ul class="navbar">
               <li><a href="unternehmen.html">Unternehmen</a></li>
-              <li><a href="team.html">Team</a></li>
-              <li><a href="jobs.html">Jobs</a></li>
-              <li><a href="kontakt.html">Kontakt</a></li>
+              <li><a href="team.html">Kanzlei</a></li>
               <li><a href="preis.html">Preise</a></li>
-              <li><a href="termin.html">Termin</a></li>
-              <li><a href="freie-berufe.html">Freie-berufe</a></li>
-              <li><a href="neuigkeiten.html">Neuigkeiten</a></li>
+              <li><a href="termin.html">Online Termin</a></li>
+              <li><a href="freie-berufe.html">Freie Berufe</a></li>
               <li><a href="privatpersonen.html">Privatpersonen</a></li>
             </ul>
           </nav>
         </div>
       </div>
     </header>
-
     <!-- Hero Section -->
     <section class="hero__kanzlei">
       <div class="full-container">
@@ -327,6 +330,15 @@
         <a class="link">Datev</a>
       </div>
     </div>
+    <div class="spiezial__lernen">
+      <div class="container">
+        <div class="title">Lernen wir uns kennen</div>
+        <p class="lernen__paragraph">
+          Gerne stehen wir Ihnen in einem persönlichen Beratungstermin für Ihre
+          Fragen zur Verfügung.
+        </p>
+      </div>
+    </div>
     <!-- Footer Section -->
     <footer>
       <div class="container">
@@ -405,6 +417,19 @@
           const navMenu = document.querySelector(".navbar");
           navMenu.classList.toggle("active"); // Toggle the active class to slide in/out
         });
+      // Active class for the current page
+      // Get current page URL path
+      const currentPage = window.location.pathname;
+
+      // Get all navigation links
+      const navLinks = document.querySelectorAll("nav ul li a");
+
+      // Loop through each link and add 'active' class if href matches current path
+      navLinks.forEach((link) => {
+        if (link.getAttribute("href") === currentPage.split("/").pop()) {
+          link.parentElement.classList.add("active");
+        }
+      });
     </script>
   </body>
 </html>
