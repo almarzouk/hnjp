@@ -385,6 +385,21 @@
         // Initialize the slider
         updateSliderPosition();
       });
+
+      // Active class for the current page
+      // Get current page URL path
+      const currentPage = window.location.pathname;
+
+      // Get all navigation links
+      const navLinks = document.querySelectorAll("nav ul li a");
+
+      // Loop through each link and add 'active' class if href matches current path
+      navLinks.forEach((link) => {
+        link.parentElement.classList.remove("active");
+        if (link.getAttribute("href") === currentPage.split("/").pop()) {
+          link.parentElement.classList.add("active");
+        }
+      });
     </script>
   </body>
 </html>
