@@ -123,11 +123,19 @@ header .top-bar {
   background-color: var(--primary-color);
   color: var(--white-color);
 }
-
+header .top-bar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .top-bar .container ul {
+  display: flex;
+  gap: 20px;
+}
 .header-main {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding-block: 20px;
   align-items: center; /* Center items vertically */
 }
 
